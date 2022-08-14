@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let num = prompt("nhap mot so:");
+  let text ="";
+  let i;
+  let check=True;
+  for (i=2; i<num; i++) {
+      if (num%i == 0) {
+          text += "day khong phai so nguyen to";
+          check = false;
+          break;
+      }
+  }
+    if (check) {
+        alert ("la so nguyen to");
+    }
+    else {
+        alert ("khong la so nguyen to");
+    }
+  document.getElementById("demo").innerHTML = text;
+
+</script>
+
+</body>
+</html>

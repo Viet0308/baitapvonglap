@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bang cuu chuong</title>
+</head>
+<body>
+<table id="show" border ="1">
+
+</table>
+</body>
+<script>
+
+  let str =""
+  for (let n = 1; n<10; n++) {
+      str += "<tr>"
+      for ( let i = 2; i < 10; i++) {
+          str += "<td>"+(i + "x" + n + "=" + i*n)+"<td/>";
+      }
+      str += "</tr>"
+  }
+
+  document.getElementById("show").innerHTML=str;
+</script>
+
+
+</html>
